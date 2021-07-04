@@ -9,10 +9,11 @@ const routes: Routes = [
     children: [
       { path: '', redirectTo: 'home', pathMatch: 'prefix' },
       { path: 'home', loadChildren: () => import('./home/home.module').then(m => m.HomeModule) },
-      // Demais rotas
+      { path: 'grupos', loadChildren: () => import('./grupo/grupo.module').then(m => m.GrupoModule) },
+      { path: 'produtos', loadChildren: () => import('./produto/produto.module').then(m => m.ProdutoModule) },
+      { path: 'clientes', loadChildren: () => import('./cliente/cliente.module').then(m => m.ClienteModule) },
 
-
-      { path: '**', redirectTo: 'home' } // Utilizado o ** para quando a rota não existir
+      { path: '*', redirectTo: 'home' } // Utilizado o * para quando a rota não existir
     ]
   }
 ];

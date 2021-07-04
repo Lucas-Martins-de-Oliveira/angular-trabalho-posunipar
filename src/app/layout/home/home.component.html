@@ -1,1 +1,12 @@
-<p>... Home ...</p>
+<div class="row principal">
+
+    <!-- Vendas por Mês - Valor -->
+    <div class="col-md-6">
+      
+      <app-chart-martins [titulo]="'Produtos por Grupo'"
+                        [dados]="produtosPorGrupo"
+                        (onRefresh)="buscarDadosGraficoAsync()">
+      </app-chart-martins>
+  
+    </div>
+  </div>

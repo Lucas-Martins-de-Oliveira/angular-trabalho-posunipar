@@ -1,5 +1,26 @@
 {
-  "clientes": [],
+  "clientes": [
+    {
+      "nome": "lucas",
+      "cpf": "084.154.869-28",
+      "dataNascimento": "1996-07-04",
+      "endereco": {
+        "logradouro": "asdasdas",
+        "numero": "22",
+        "bairro": "2222",
+        "cidade": {
+          "id": 1,
+          "nome": "Toledo",
+          "uf": "PR"
+        },
+        "cidadeId": [
+          1
+        ]
+      },
+      "dateInsert": "2021-07-04T02:04:41.689Z",
+      "id": 1
+    }
+  ],
   "cidades": [
     {
       "id": 1,
@@ -16,5 +37,7 @@
       "nome": "Cascavel",
       "uf": "PR"
     }
-  ]
+  ],
+  "produtos": [],
+  "grupos": []
 }
